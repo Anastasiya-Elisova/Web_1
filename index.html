@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Галерея</title>
 </head>
-<body>
-  <h1 style=color:#7442c8>Галерея_2025</h1>
-  <p>Рисование — это тишина для ума и музыка для глаза. <br>
-   (с) Орхан Памук</p>
-  <h2>Лучшая работа за февраль</h2>
-  <img src = "1.jpg" alt = "лучшая работа за февраль" width = 450 px height = 450 px>
 
-  <p><b>Материалы: </b>лайнеры, маркеры.</p>
-  <div>
-		<h2> И ещё немного всяких разных: </h2>
-		<div>
-		<img src = "5.jpg" width = 450 px height = 550 px>
-		<img src = "4.jpg" width = 750 px height = 550 px>
-		</div>
-		<img src = "2.jpg" alt = "цветы" width = 350 px height = 350 px>
-		<img src = "3.jpg" alt = "почтовый кот" width = 350 px height = 350 px>
-		<img src = "6.jpg" width = 450 px height = 350 px>
+<body style='background-image: url("fon.jpg"); background-size: cover;  background-color: rgba(255, 255, 255, 0.1); background-blend-mode: lighten;'>
+  <div class="container" style="display: flex; flex-direction: column; padding: 20px;">
+
+    <div class="header-section" style="flex-direction: column; display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 20px;">
+      <div class="inner-div" style="text-align: center;">
+        <h1 style="color:#7442c8; margin: 0; font-family: 'Ink Free'; text-shadow: 0 0 7px #fff">Галерея_2025</h1>
+        <p style="margin: 5px 0;">Рисование — это тишина для ума и музыка для глаза.
+          <br>(с) Орхан Памук</p>
+      </div>
+    </div>
+
+    <h1 style="color:green; text-decoration-line: underline; text-decoration-style:dotted; padding-bottom: 5px; font-family: 'Segoe Print'">Ура, обновление галереи :) </h1>
+    <div class="image-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px;">
+      <img src="7.jpg" width="100%" height="auto" style="object-fit: cover;">
+      <img src="8.jpg" width="100%" height="1042" style="object-fit: cover;">
+    </div>
+    <h2 style="text-align:left">Лучшая работа за февраль</h2>
+    <div class="main-content" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+
+      <div class="arts" style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 20px;">
+        <img src="1.jpg" alt="лучшая работа за февраль" width="450" height="450" style="object-fit: cover;">
+        <div style="text-align: left;">
+          <p><b>Материалы:</b> лайнеры, маркеры.</p>
+        </div>
+
+        <h3 style="text-align: center; margin-top: 15px;">И ещё немного всяких разных:</h3>
+
+        <div class="image-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px;">
+          <img src="5.jpg" width="100%" height="auto" style="object-fit: cover;">
+          <img src="4.jpg" width="100%" height="auto" style="object-fit: cover;">
+          <img src="2.jpg" alt="цветы" width="100%" height="auto" style="object-fit: cover;">
+          <img src="3.jpg" alt="почтовый кот" width="100%" height="auto" style="object-fit: cover;">
+          <img src="6.jpg" width="100%" height="auto" style="object-fit: cover;">
+        </div>
+      </div>
+    </div>
+
+    <div class="list">
+      <h2>Список</h2>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      <ol>
+        <li>4</li>
+        <li>5</li>
+      </ol>
+    </div>
+
+    <div class="table">
+      <table>
+        <tr>
+          <th>Товары</th>
+          <th>Вес</th>
+        </tr>
+        <tr>
+          <td>Мука</td>
+          <td>100кг</td>
+        </tr>
+        <tr>
+          <td>Рис</td>
+          <td>70кг</td>
+        </tr>
+        <tr>
+          <td>Сахар</td>
+          <td>150кг</td>
+        </tr>
+        <tr>
+          <td>Чай</td>
+          <td>10кг</td>
+        </tr>
+      </table>
+    </div>
+
   </div>
-
-  <h2>Список</h2>
-  <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-  </ul>
-  <ol>
-    <li>4</li>
-    <li>5</li>
-  </ol>
-  
-  
-  <table>
- <tr>
- <th>Товары</th>
- <th>Вес</th>
- </tr>
- <tr>
- <td>Мука</td>
- <td>100кг</td>
- </tr>
-  <tr>
- <td>Рис</td>
- <td>70кг</td>
- </tr>
-  <tr>
- <td>Сахар</td>
- <td>150кг</td>
- </tr>
-  <tr>
- <td>Чай</td>
- <td>10кг</td>
- </tr>
- </table>
-
-
 </body>
+
 </html>
