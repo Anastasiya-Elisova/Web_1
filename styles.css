@@ -1,0 +1,204 @@
+body 
+{
+    background-image: url("fon.jpg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: lighten;
+    margin: 0;
+    padding: 0;
+}
+
+.container 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.header-section 
+{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.inner-div 
+{
+    text-align: center;
+}
+
+#firsth1 
+{
+    color: #7442c8;
+    margin: 0;
+    font-family: 'Ink Free';
+    text-shadow: 0 0 7px #fff
+}
+
+#secondh1 
+{
+    color: green;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    padding-bottom: 5px;
+    font-family: 'Segoe Print'
+	margin: 0 auto;
+	width: 100%;
+}
+
+.image-grid 
+{  width: 80%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 100px;
+    margin: 0 auto;
+   
+}
+
+
+.h2 
+{
+    text-align: left;
+}
+
+.main-content 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.arts 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+	align-items: center;
+}
+
+.image-grid1 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+/* Общие стили для всех изображений */
+img {
+    height: auto;
+	width: 100%;
+    object-fit: cover;
+}
+
+.image-grid img 
+{
+	
+	height:100%;
+    width: 100%;
+}
+
+.arts img 
+{
+    width: 70%; 
+    margin: 0 auto;
+    display: block;
+	
+}
+
+.image-grid1 img 
+{
+	
+    width: 100%;
+}
+.h3
+{
+	text-align: center;
+	margin-top: 15px;
+}
+
+#p1 
+{
+    text-align: center;
+}
+.arts h2 
+{
+    position: relative;
+    left: 200px; 
+}
+
+/* Для экранов шириной менее 768px */
+@media (max-width: 767px) 
+{
+  .image-grid 
+  {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  #firsth1 
+  {
+    font-size: 2em; /* Уменьшаем размер заголовка */
+  }
+
+  .arts
+  {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/* Для экранов от 768px до 992px (планшеты) */
+@media (min-width: 768px) and (max-width: 991px)
+{
+  .image-grid
+  {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* Для экранов шириной 992px и больше (компьютеры) */
+@media (min-width: 992px) 
+{
+  .image-grid 
+  {
+    grid-template-columns: repeat(2, 1fr); 
+	
+  }
+}
+
+/* Анимация изображений при наведении */
+.image-grid img:hover 
+{
+  transform: scale(1.05); /* Увеличиваем размер при наведении */
+  transition: transform 0.3s ease; /* Добавляем плавный переход */
+  box-shadow: 0 0 30px rgba(10, 10, 10, 0.9); /* Добавляем тень */
+}
+
+/* Анимация для заголовков */
+#secondh1 
+{
+  animation: underlineAnimation 2s infinite ease-in-out;
+}
+
+@keyframes underlineAnimation 
+{
+  0% 
+  {
+    text-decoration-color: green;
+  }
+  50% 
+  {
+    text-decoration-color: red;
+  }
+  100% 
+  {
+    text-decoration-color: green;
+  }
+}
